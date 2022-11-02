@@ -27,17 +27,14 @@
             <el-menu-item index="1-3">选项3</el-menu-item>
           </el-submenu>
           <el-menu-item index="2">Explore</el-menu-item>
-          <el-menu-item index="3">Download</el-menu-item>
+          <el-menu-item index="3"><router-link to="/downloadPage" style="text-decoration: none">Download</router-link></el-menu-item>
         </el-menu>
       </div>
-      <img class="logo" src="@/assets/logo.png" alt="">
-<!--      <div class="logo">-->
-<!--        <img  src="@/assets/logo.png" alt="">-->
-<!--      </div>-->
+      <router-link to="/homepage"><img class="logo" src="@/assets/logo.png" alt=""></router-link>
     </div>
 
     <div class="content">
-      <h2>hello world</h2>
+      <router-view style="padding-top: 100px"> </router-view>
     </div>
   </div>
 </template>
@@ -110,8 +107,5 @@ export default {
 
 .space {
   width: 1%;
-}
-h2{
-  padding-top: 100px;
 }
 </style>
