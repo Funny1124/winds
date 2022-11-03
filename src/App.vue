@@ -5,9 +5,9 @@
         <el-link href="https://archlinux.org/packages/" target="_blank"><i class="el-icon-menu"></i> Linux Software
         </el-link>
         <el-link class="space"></el-link>
-        <el-link href="https://element.eleme.io" target="_blank"><i class="el-icon-cpu"></i> Hardware</el-link>
+        <el-link href="https://manjaro.org/hardware/" target="_blank"><i class="el-icon-cpu"></i> Hardware</el-link>
         <el-link class="space"></el-link>
-        <el-link href="https://element.eleme.io" target="_blank"><i class="el-icon-shopping-cart-1"></i> Merchandise
+        <el-link href="https://manjaro.myspreadshop.net/" target="_blank"><i class="el-icon-shopping-cart-1"></i> Merchandise
         </el-link>
         <el-link class="right-tab"></el-link>
       </div>
@@ -16,21 +16,36 @@
             :default-active="activeIndex" class="el-menu-demo"
             background-color="#26a69a"
             text-color="#b2dfdb"
-            mode="horizontal" @select="handleSelect" active-text-color="white">
-          <!-- 占位 -->
-          <el-menu-item index="0" class="tab">
-          </el-menu-item>
+            mode="horizontal" @select="handleSelect" active-text-color="white" style="padding-left: 6%">
           <el-submenu index="1">
             <template slot="title">Projects</template>
-            <el-menu-item index="1-1">选项1</el-menu-item>
-            <el-menu-item index="1-2">选项2</el-menu-item>
-            <el-menu-item index="1-3">选项3</el-menu-item>
+            <el-menu-item index="1-1">Blog</el-menu-item>
+            <el-menu-item index="1-2">Mirrors</el-menu-item>
+            <el-menu-item index="1-3">Update Status</el-menu-item>
+            <el-menu-item index="1-4">Team</el-menu-item>
+            <el-menu-item index="1-5">Donate</el-menu-item>
           </el-submenu>
-          <el-menu-item index="2">Explore</el-menu-item>
-          <el-menu-item index="3"><router-link to="/downloadPage" style="text-decoration: none">Download</router-link></el-menu-item>
+          <el-submenu index="2">
+            <template slot="title">Explore</template>
+            <el-menu-item index="2-1">SoftWare</el-menu-item>
+            <el-menu-item index="2-2">Package</el-menu-item>
+          </el-submenu>
+          <el-submenu index="3">
+            <template slot="title">Learn</template>
+            <el-menu-item index="3-1">Forum</el-menu-item>
+            <el-menu-item index="3-2">Wiki</el-menu-item>
+            <el-menu-item index="3-3">Docs</el-menu-item>
+          </el-submenu>
+          <el-submenu index="4">
+            <template slot="title">Supporters</template>
+            <el-menu-item index="4-1">Sponsors</el-menu-item>
+            <el-menu-item index="4-2">Partners</el-menu-item>
+          </el-submenu>
         </el-menu>
+
       </div>
-      <router-link to="/homepage"><img class="logo" src="@/assets/logo.png" alt=""></router-link>
+      <router-link to="/homePage"><img class="logo" src="@/assets/logo.png" alt=""></router-link>
+      <router-link to="/downloadPage"><el-button type="success" round class="download"><i class="el-icon-download"></i>Download</el-button ></router-link>
     </div>
 
     <div class="content">
@@ -71,9 +86,18 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
-  width: auto;
-  height: 80%;
-  padding: 8px;
+  width: 6%;
+  height: auto;
+  padding: 4px;
+  border-radius: 8px;
+}
+.download {
+  position: absolute;
+  right: 5%;
+  top: 45px;
+  /*width: 8%;*/
+  height: 30px;
+  padding: 4px;
   border-radius: 8px;
 }
 .heart {
@@ -97,9 +121,6 @@ export default {
   height: 1000px;
 }
 
-.tab {
-  width: 15%;
-}
 
 .right-tab {
   width: 5%;

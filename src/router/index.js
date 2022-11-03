@@ -6,8 +6,8 @@ import HomePage from "@/components/HomePage";
 import DownloadPage from "@/components/DownloadPage";
 const router = new VueRouter({
     routes:[
-        {path:"/" ,redirect:"/homepage"},
-        {path:"/homepage",component:HomePage},
+        {path:"/" ,redirect:"/homePage"},
+        {path:"/homePage",component:HomePage},
         {path:"/downloadPage",component:DownloadPage},
     ]
 })
