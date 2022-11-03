@@ -7,7 +7,8 @@
         <el-link class="space"></el-link>
         <el-link href="https://manjaro.org/hardware/" target="_blank"><i class="el-icon-cpu"></i> Hardware</el-link>
         <el-link class="space"></el-link>
-        <el-link href="https://manjaro.myspreadshop.net/" target="_blank"><i class="el-icon-shopping-cart-1"></i> Merchandise
+        <el-link href="https://manjaro.myspreadshop.net/" target="_blank"><i class="el-icon-shopping-cart-1"></i>
+          Merchandise
         </el-link>
         <el-link class="right-tab"></el-link>
       </div>
@@ -45,11 +46,76 @@
 
       </div>
       <router-link to="/homePage"><img class="logo" src="@/assets/logo.png" alt=""></router-link>
-      <router-link to="/downloadPage"><el-button type="success" round class="download"><i class="el-icon-download"></i>Download</el-button ></router-link>
+      <router-link to="/downloadPage">
+        <el-button type="success" round class="download"><i class="el-icon-download"></i>Download</el-button>
+      </router-link>
     </div>
 
     <div class="content">
-      <router-view style="padding-top: 100px"> </router-view>
+      <router-view style="padding-top: 100px"></router-view>
+    </div>
+
+    <div class="footer">
+      <el-row :gutter="10" style="padding-bottom: 30px">
+        <el-col :span="3">
+          <div class="grid-content "></div>
+        </el-col>
+        <el-col :span="5">
+          <div class="grid-content">
+
+            <h2>Winds</h2>
+            <p>Manjaro Linux Open Source operating system is, and always will be, provided free of charge.</p>
+            <p>The Manjaro project is backed up by Manjaro Gmbh & Co, KG, an Open Source driven company.</p>
+          </div>
+        </el-col>
+        <el-col :span="1">
+          <div class="grid-content "></div>
+        </el-col>
+        <el-col :span="3">
+          <div class="grid-content">
+            <h2>LEGAL</h2>
+            <div>Privacy Policy</div>
+            <div>Terms of use</div>
+            <div>Imprint</div>
+          </div>
+        </el-col>
+
+        <el-col :span="3">
+          <div class="grid-content">
+            <h2>SOCIAL</h2>
+            <div>Facebook</div>
+            <div>Telegram</div>
+            <div>Youtube</div>
+            <div>Twitter</div>
+          </div>
+        </el-col>
+
+        <el-col :span="3">
+          <div class="grid-content">
+            <h2>DEVELOPMENT</h2>
+            <div>Code of Conduct</div>
+            <div>Source Code</div>
+            <div>Sending a PR</div>
+          </div>
+        </el-col>
+
+        <el-col :span="3">
+          <div class="grid-content">
+            <h2>MAILING LISTS</h2>
+            <div>Development</div>
+            <div>Packages</div>
+            <div>Security</div>
+            <div>General</div>
+            <div>Testing</div>
+            <div>Mirrors</div>
+          </div>
+        </el-col>
+        <el-col :span="3">
+          <div class="grid-content"></div>
+        </el-col>
+      </el-row>
+      <el-divider></el-divider>
+      <div style="text-align: center ; padding-bottom: 30px">&copy; &nbsp; Copyright 2022 Winds GmbH & Co KG All rights reserved.</div>
     </div>
   </div>
 </template>
@@ -82,6 +148,37 @@ export default {
   /*margin-top: 60px;*/
 }
 
+.el-row {
+  margin-bottom: 20px;
+
+}
+
+.el-col {
+  border-radius: 4px;
+}
+
+.bg-purple-dark {
+  background: #99a9bf;
+}
+
+.bg-purple {
+  background: #d3dce6;
+}
+
+.bg-purple-light {
+  background: #e5e9f2;
+}
+
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+
 .logo {
   position: absolute;
   left: 0;
@@ -91,6 +188,7 @@ export default {
   padding: 4px;
   border-radius: 8px;
 }
+
 .download {
   position: absolute;
   right: 5%;
@@ -100,6 +198,7 @@ export default {
   padding: 4px;
   border-radius: 8px;
 }
+
 .heart {
   position: fixed;
   top: 0;
@@ -118,9 +217,13 @@ export default {
 }
 
 .content {
-  height: 1000px;
+  height: 1200px;
 }
 
+.footer {
+  background-color: #26a69a;
+  width: 100%;
+}
 
 .right-tab {
   width: 5%;
