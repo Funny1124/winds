@@ -29,6 +29,9 @@
           <template slot="title">Explore</template>
           <el-menu-item index="2-1">SoftWare</el-menu-item>
           <el-menu-item index="2-2">Package</el-menu-item>
+          <el-menu-item index="2-3">
+            <router-link to="/newsPage" style="text-decoration: none ;">News</router-link>
+          </el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">Learn</template>
@@ -63,43 +66,12 @@ export default {
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
-    }
+    },
   },
 }
 </script>
 
 <style scoped>
-
-.el-row {
-  margin-bottom: 20px;
-
-}
-
-.el-col {
-  border-radius: 4px;
-}
-
-.bg-purple-dark {
-  background: #99a9bf;
-}
-
-.bg-purple {
-  background: #d3dce6;
-}
-
-.bg-purple-light {
-  background: #e5e9f2;
-}
-
-.grid-content {
-  border-radius: 4px;
-  min-height: 36px;
-}
-
-.row-bg {
-  padding: 10px 0;
-  background-color: #f9fafc;
-}
 
 .logo {
   position: absolute;
@@ -146,15 +118,6 @@ export default {
   height: 30px;
   line-height: 30px;
   text-align: right;
-}
-
-.content {
-  height: 1200px;
-}
-
-.footer {
-  background-color: #26a69a;
-  width: 100%;
 }
 
 .right-tab {
