@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "NewsPage",
+  name: "NewsView",
   data() {
     return {
       new_list: [{

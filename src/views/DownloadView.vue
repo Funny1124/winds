@@ -1,14 +1,14 @@
 <template>
 <div>
   <h2>
-    here are home page
+    here are download page
   </h2>
 </div>
 </template>
 
 <script>
 export default {
-  name: "HomePage"
+  name: "DownloadView"
 }
 </script>
 

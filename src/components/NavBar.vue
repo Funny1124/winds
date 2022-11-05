@@ -30,7 +30,7 @@
           <el-menu-item index="2-1">SoftWare</el-menu-item>
           <el-menu-item index="2-2">Package</el-menu-item>
           <el-menu-item index="2-3">
-            <router-link to="/newsPage" style="text-decoration: none ;">News</router-link>
+            <router-link to="/news" style="text-decoration: none ;">News</router-link>
           </el-menu-item>
         </el-submenu>
         <el-submenu index="3">
@@ -47,9 +47,9 @@
       </el-menu>
 
     </div>
-    <router-link to="/homePage"><img class="logo" src="@/assets/logo.png" alt=""></router-link>
-    <router-link to="/contactUs"><img class="contact" src="@/assets/email.png" alt=""></router-link>
-    <router-link to="/downloadPage">
+    <router-link to="/home"><img class="logo" src="@/assets/logo.png" alt=""></router-link>
+    <router-link to="/contact"><img class="contact" src="@/assets/email.png" alt=""></router-link>
+    <router-link to="/download">
       <el-button type="success" round class="download"><i class="el-icon-download"></i>Download</el-button>
     </router-link>
   </div>
