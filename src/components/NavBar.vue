@@ -13,10 +13,12 @@
     </div>
     <div>
       <el-menu
-          :default-active="activeIndex" class="el-menu-demo"
+          router
+          :default-active="activeIndex"
+          class="el-menu-demo"
           background-color="#26a69a"
           text-color="#b2dfdb"
-          mode="horizontal" @select="handleSelect" active-text-color="white" style="padding-left: 6%">
+          mode="horizontal" @select="handleSelect" active-text-color="white" style="padding-left: 6%" >
         <el-submenu index="1">
           <template slot="title">Projects</template>
           <el-menu-item index="1-1">Blog</el-menu-item>
@@ -29,9 +31,7 @@
           <template slot="title">Explore</template>
           <el-menu-item index="2-1">SoftWare</el-menu-item>
           <el-menu-item index="2-2">Package</el-menu-item>
-          <el-menu-item index="2-3">
-            <router-link to="/news" style="text-decoration: none ;">News</router-link>
-          </el-menu-item>
+          <el-menu-item index="/news" >News</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">Learn</template>
