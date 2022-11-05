@@ -71,10 +71,12 @@ export default {
 
 <style scoped>
 .Carousel {
-  width: 60%;
+  width: 70%;
   /*height: 20%;*/
   margin: 0 auto;
+  padding: 1% 10%;
   text-align: center;
+  border: medium dashed #26a69a;
 }
 
 .time {
