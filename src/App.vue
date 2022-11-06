@@ -2,7 +2,9 @@
   <div id="app">
     <nav-bar style="z-index: 3"></nav-bar>
     <div class="content" style="z-index: 1;padding-top: 110px">
-      <router-view></router-view>
+      <transition name="component-fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
     <bottom-nav-bar style="z-index: 2"></bottom-nav-bar>
   </div>
@@ -36,6 +38,14 @@ export default {
 }
 
 .content {
-  height: 1200px;
+  /*height: 1200px;*/
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .6s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active for below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
