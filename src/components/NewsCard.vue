@@ -14,25 +14,6 @@
     </el-col>
   </el-row>
 
-  <!--  <el-card class="info-card" :body-style="{ padding: '0px' }">-->
-  <!--    <el-row :gutter="20">-->
-  <!--      <el-col :span="8" v-if="info.index%2===1">-->
-  <!--        <img :src="info.item.image" alt="加载失败" class="image">-->
-  <!--      </el-col>-->
-  <!--      <el-col :span="4">-->
-  <!--        <h2 style="text-align: center">{{ info.item.title }}</h2>-->
-  <!--        <p style="text-indent:2em">{{ info.item.description }}</p>-->
-  <!--        <time class="time">{{ info.item.create_time }}</time>-->
-  <!--        <span class="bottom clearfix">-->
-  <!--        <el-button type="text" class="button">查看详情</el-button>-->
-  <!--        </span>-->
-  <!--      </el-col>-->
-  <!--      <el-col :span="8" v-if="info.index%2===0">-->
-  <!--        <img :src="info.item.image" alt="加载失败" class="image">-->
-  <!--      </el-col>-->
-  <!--    </el-row>-->
-  <!--  </el-card>-->
-
 </template>
 
 <script>

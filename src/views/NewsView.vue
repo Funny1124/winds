@@ -52,19 +52,19 @@ export default {
           title: '2003',
           create_time: "2021-12-01",
           image: "https://atts.w3cschool.cn/attachments/image/20210525/1621925534797542.png",
-          description: "从中华民族伟大复兴视角解读党的十九届六中全会学党史向未来从中华民族伟大复兴视角解读",
+          description: "从中华民族伟大复兴视角解读党的十九届六中全会学党史向未来",
         },
         {
           title: '2004',
           create_time: "2021-12-01",
           image: "https://img2.baidu.com/it/u=1277621845,2403285845&fm=253&fmt=auto&app=138&f=PNG?w=697&h=500",
-          description: "从中华民族伟大复兴视角解读党的十九届六中全会,从中华民族伟大复兴视角解读",
+          description: "从中华民族伟大复兴视角解读党的十九届六中全会",
         },
         {
           title: '2005',
           create_time: "2021-12-01",
           image: "https://atts.w3cschool.cn/attachments/image/20210525/1621925534797542.png",
-          description: "从中华民族伟大复兴视角解读党的十九届六中全会学党史向未来从中华民族伟大复兴视角解读",
+          description: "从中华民族伟大复兴视角解读党的十九届六中全会学党史向未来",
         },
         {
           title: '2006',
